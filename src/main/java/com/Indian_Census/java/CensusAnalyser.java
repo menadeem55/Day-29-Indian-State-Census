@@ -5,6 +5,7 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
+
 import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
@@ -31,9 +32,9 @@ public class CensusAnalyser {
 
 	public static void main(String[] args) throws CensusAnalyserException {
 
-		final String INDIA_CENSUS_CSV_FILE_PATH = "C:\\Users\\menad\\OneDrive\\Desktop\\Blabz practice problem\\Day2Problems\\CensusAnalyser\\IndianCenses.csv";
+		final String INDIAN_STATE_CSV_FILE = "C:\\Users\\menad\\OneDrive\\Desktop\\Blabz practice problem\\Day2Problems\\CensusAnalyser\\IndianStates.csv";
 		CensusAnalyser censusAnalyser = new CensusAnalyser();
-		int numOfRecords = censusAnalyser.loadIndiaCensusData(INDIA_CENSUS_CSV_FILE_PATH);
+		int numOfRecords = censusAnalyser.loadIndiaCensusData(INDIAN_STATE_CSV_FILE);
 		System.out.println(numOfRecords);
 	}
 
